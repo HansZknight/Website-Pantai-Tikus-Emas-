@@ -1,0 +1,3064 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Pantai Tikus Emas - Surga Tropis di Pulau Bangka. Nikmati pasir putih, air laut jernih, dan sunset spektakuler. Pesan paket wisata Anda sekarang!">
+    <meta name="keywords" content="Pantai Tikus Emas, Wisata Bangka, Pantai Bangka Belitung, Destinasi Wisata Indonesia">
+    <meta name="author" content="Pantai Tikus Emas Tourism">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Pantai Tikus Emas - Surga Tropis Pulau Bangka">
+    <meta property="og:description" content="Destinasi wisata pantai terbaik di Pulau Bangka dengan pasir putih dan air laut kristal">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200">
+    <meta property="og:type" content="website">
+    
+    <title>🏝️ Pantai Tikus Emas - Surga Tropis Pulau Bangka | Official Website</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🏝️</text></svg>">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Pacifico&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- AOS Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <style>
+        /* ==================== CSS VARIABLES ==================== */
+        :root {
+            --ocean-blue: #0077BE;
+            --ocean-light: #4A9FD8;
+            --ocean-dark: #004E7A;
+            --sand-gold: #FFB347;
+            --sand-light: #FFD700;
+            --sand-dark: #FF9500;
+            --tropical-green: #00C896;
+            --tropical-coral: #FF6B6B;
+            --tropical-sunset: #FF8C42;
+            --white: #FFFFFF;
+            --cream: #FFF8F0;
+            --beige: #F5E6D3;
+            --light-gray: #F7F9FC;
+            --gray: #8B9BB3;
+            --dark-gray: #2C3E50;
+            --black: #1A1A1A;
+            
+            --gradient-ocean: linear-gradient(135deg, #0077BE 0%, #00C896 100%);
+            --gradient-sunset: linear-gradient(135deg, #FF8C42 0%, #FFD700 100%);
+            
+            --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+            --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+            --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.16);
+            --shadow-xl: 0 12px 48px rgba(0, 0, 0, 0.2);
+            
+            --transition: all 0.3s ease;
+            --radius-md: 12px;
+            --radius-lg: 16px;
+            --radius-xl: 24px;
+            --radius-full: 9999px;
+        }
+
+        [data-theme="dark"] {
+            --white: #1A1A1A;
+            --cream: #2C2C2C;
+            --light-gray: #252525;
+            --dark-gray: #E0E0E0;
+            --black: #FFFFFF;
+        }
+
+        /* ==================== RESET ==================== */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.7;
+            color: var(--dark-gray);
+            background: var(--white);
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-weight: 700;
+            line-height: 1.3;
+            color: var(--dark-gray);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: var(--transition);
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        button {
+            font-family: inherit;
+            cursor: pointer;
+            border: none;
+            background: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section {
+            padding: 80px 0;
+            position: relative;
+        }
+
+        /* ==================== PRELOADER ==================== */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--gradient-ocean);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 99999;
+            transition: opacity 0.5s ease;
+        }
+
+        .preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .wave-loader {
+            display: flex;
+            gap: 8px;
+        }
+
+        .wave {
+            width: 12px;
+            height: 60px;
+            background: var(--white);
+            border-radius: 10px;
+            animation: wave 1.2s ease-in-out infinite;
+        }
+
+        .wave:nth-child(1) { animation-delay: 0s; }
+        .wave:nth-child(2) { animation-delay: 0.1s; }
+        .wave:nth-child(3) { animation-delay: 0.2s; }
+        .wave:nth-child(4) { animation-delay: 0.3s; }
+        .wave:nth-child(5) { animation-delay: 0.4s; }
+
+        @keyframes wave {
+            0%, 100% { transform: scaleY(0.5); opacity: 0.5; }
+            50% { transform: scaleY(1); opacity: 1; }
+        }
+
+        .loading-text {
+            margin-top: 30px;
+            color: var(--white);
+            font-size: 1.2rem;
+            letter-spacing: 2px;
+        }
+
+        /* ==================== PROMO BANNER ==================== */
+        .promo-banner {
+            background: var(--gradient-sunset);
+            color: var(--white);
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1020;
+        }
+
+        .promo-banner.hidden {
+            display: none;
+        }
+
+        .promo-content {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            font-size: 0.95rem;
+            font-weight: 500;
+        }
+
+        .promo-content i {
+            font-size: 1.5rem;
+            animation: bounce 1s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-5px); }
+        }
+
+        .promo-close {
+            position: absolute;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: var(--transition);
+            cursor: pointer;
+        }
+
+        .promo-close:hover {
+            background: rgba(255, 255, 255, 0.3);
+            transform: rotate(90deg);
+        }
+
+        /* ==================== NAVBAR ==================== */
+        .navbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(20px);
+            box-shadow: var(--shadow-md);
+            z-index: 1000;
+            transition: var(--transition);
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            z-index: 10;
+        }
+
+        .logo-icon {
+            position: relative;
+            width: 50px;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .logo-icon i {
+            font-size: 2rem;
+            color: var(--ocean-blue);
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-8px); }
+        }
+
+        .logo-text {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .logo-main {
+            font-size: 1.3rem;
+            font-weight: 800;
+            background: var(--gradient-ocean);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .logo-sub {
+            font-size: 0.7rem;
+            color: var(--sand-gold);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .nav-menu {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin: 0 auto;
+        }
+
+        .nav-link {
+            padding: 10px 15px;
+            color: var(--dark-gray);
+            font-weight: 500;
+            font-size: 0.95rem;
+            border-radius: var(--radius-md);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: var(--gradient-ocean);
+            border-radius: 10px;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::before,
+        .nav-link.active::before {
+            width: 80%;
+        }
+
+        .nav-link:hover,
+        .nav-link.active {
+            color: var(--ocean-blue);
+        }
+
+        .nav-actions {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .weather-widget {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 15px;
+            background: var(--gradient-sunset);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .theme-toggle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--light-gray);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--dark-gray);
+            transition: var(--transition);
+        }
+
+        .theme-toggle:hover {
+            background: var(--ocean-blue);
+            color: var(--white);
+            transform: rotate(180deg);
+        }
+
+        .btn-book-now {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 24px;
+            background: var(--gradient-ocean);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            box-shadow: 0 8px 24px rgba(0, 119, 190, 0.3);
+            transition: var(--transition);
+        }
+
+        .btn-book-now:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 32px rgba(0, 119, 190, 0.4);
+        }
+
+        .menu-toggle {
+            display: none;
+            flex-direction: column;
+            gap: 5px;
+            width: 30px;
+            height: 30px;
+            justify-content: center;
+            z-index: 10;
+        }
+
+        .menu-toggle span {
+            width: 100%;
+            height: 3px;
+            background: var(--ocean-blue);
+            border-radius: 10px;
+            transition: var(--transition);
+        }
+
+        .menu-toggle.active span:nth-child(1) {
+            transform: rotate(45deg) translate(7px, 7px);
+        }
+
+        .menu-toggle.active span:nth-child(2) {
+            opacity: 0;
+        }
+
+        .menu-toggle.active span:nth-child(3) {
+            transform: rotate(-45deg) translate(7px, -7px);
+        }
+
+        .scroll-progress {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            height: 3px;
+            background: var(--gradient-ocean);
+            width: 0%;
+            transition: width 0.1s linear;
+        }
+
+        /* ==================== HERO ==================== */
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+        }
+
+        .hero-video {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            object-fit: cover;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, 
+                rgba(0, 119, 190, 0.7) 0%, 
+                rgba(0, 200, 150, 0.5) 50%,
+                rgba(255, 179, 71, 0.3) 100%);
+        }
+
+        .beach-elements {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+            pointer-events: none;
+        }
+
+        .palm-tree {
+            position: absolute;
+            font-size: 8rem;
+            opacity: 0.3;
+            animation: sway 4s ease-in-out infinite;
+        }
+
+        .palm-left {
+            bottom: 0;
+            left: 5%;
+        }
+
+        .palm-right {
+            bottom: 0;
+            right: 5%;
+            transform: scaleX(-1);
+        }
+
+        @keyframes sway {
+            0%, 100% { transform: rotate(0deg); }
+            50% { transform: rotate(3deg); }
+        }
+
+        .floating-cloud {
+            position: absolute;
+            font-size: 4rem;
+            opacity: 0.4;
+            animation: float-cloud 20s linear infinite;
+        }
+
+        .cloud-1 { top: 10%; animation-delay: 0s; }
+        .cloud-2 { top: 20%; animation-delay: 7s; }
+        .cloud-3 { top: 30%; animation-delay: 14s; }
+
+        @keyframes float-cloud {
+            0% { left: -10%; }
+            100% { left: 110%; }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 3;
+            text-align: center;
+            max-width: 900px;
+            padding: 20px;
+        }
+
+        .hero-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 10px 24px;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-full);
+            color: var(--white);
+            font-weight: 600;
+            margin-bottom: 30px;
+            border: 2px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .hero-title {
+            font-size: clamp(2.5rem, 6vw, 5rem);
+            font-weight: 900;
+            color: var(--white);
+            margin-bottom: 20px;
+            text-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+            line-height: 1.2;
+        }
+
+        .gradient-text {
+            background: var(--gradient-sunset);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.5rem, 3vw, 2.5rem);
+            color: var(--sand-light);
+            margin-bottom: 20px;
+            font-family: 'Pacifico', cursive;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-description {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            color: var(--white);
+            max-width: 700px;
+            margin: 0 auto 40px;
+            font-style: italic;
+            line-height: 1.8;
+            text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+        }
+
+        .hero-stats {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 15px 25px;
+            background: rgba(255, 255, 255, 0.15);
+            backdrop-filter: blur(10px);
+            border-radius: var(--radius-lg);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: var(--transition);
+        }
+
+        .stat-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-5px);
+        }
+
+        .stat-item i {
+            font-size: 2rem;
+            color: var(--sand-gold);
+        }
+
+        .stat-number {
+            font-size: 1.8rem;
+            font-weight: 800;
+            color: var(--white);
+            line-height: 1;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+
+        .hero-buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 35px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            font-size: 1.05rem;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .btn-primary {
+            background: var(--gradient-sunset);
+            color: var(--white);
+            box-shadow: 0 8px 24px rgba(255, 179, 71, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(255, 179, 71, 0.4);
+        }
+
+        .btn-secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: var(--white);
+            border: 2px solid var(--white);
+            backdrop-filter: blur(10px);
+        }
+
+        .btn-secondary:hover {
+            background: var(--white);
+            color: var(--ocean-blue);
+            transform: translateY(-3px);
+        }
+
+        .trust-badges {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .badge-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.9rem;
+        }
+
+        .badge-item i {
+            color: var(--sand-gold);
+        }
+
+        .scroll-indicator {
+            position: absolute;
+            bottom: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 3;
+            text-align: center;
+        }
+
+        .mouse {
+            width: 30px;
+            height: 50px;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            border-radius: 20px;
+            margin: 0 auto 10px;
+            position: relative;
+        }
+
+        .wheel {
+            width: 6px;
+            height: 10px;
+            background: var(--white);
+            border-radius: 3px;
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            animation: scroll-wheel 2s infinite;
+        }
+
+        @keyframes scroll-wheel {
+            0% { top: 10px; opacity: 1; }
+            100% { top: 30px; opacity: 0; }
+        }
+
+        .scroll-indicator p {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .wave-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+            z-index: 2;
+        }
+
+        .wave-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 80px;
+        }
+
+        /* ==================== BEACH STATUS ==================== */
+        .beach-status {
+            background: linear-gradient(135deg, var(--cream) 0%, var(--beige) 100%);
+            padding: 60px 0;
+            border-top: 3px solid var(--sand-gold);
+            position: relative;
+        }
+
+        .status-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+        }
+
+        .status-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            padding: 25px;
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border: 2px solid transparent;
+        }
+
+        .status-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+            border-color: var(--ocean-light);
+        }
+
+        .status-icon {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: var(--gradient-ocean);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+        }
+
+        .status-icon i {
+            font-size: 1.8rem;
+            color: var(--white);
+        }
+
+        .status-label {
+            font-size: 0.85rem;
+            color: var(--gray);
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .status-value {
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: var(--dark-gray);
+            margin-top: 4px;
+        }
+
+        .status-value.safe { color: var(--tropical-green); }
+        .status-value.moderate { color: var(--sand-gold); }
+
+        /* ==================== SECTION HEADERS ==================== */
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-subtitle {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 24px;
+            background: var(--light-gray);
+            border-radius: var(--radius-full);
+            color: var(--ocean-blue);
+            font-size: 0.9rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 20px;
+        }
+
+        .section-title {
+            font-size: clamp(2rem, 5vw, 3.5rem);
+            font-weight: 800;
+            background: var(--gradient-ocean);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 20px;
+        }
+
+        .section-description {
+            font-size: 1.15rem;
+            color: var(--gray);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        /* ==================== ABOUT SECTION ==================== */
+        .about {
+            background: var(--white);
+        }
+
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .about-images {
+            position: relative;
+        }
+
+        .about-image-main {
+            position: relative;
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-xl);
+            transform: rotate(-2deg);
+            transition: var(--transition);
+        }
+
+        .about-image-main:hover {
+            transform: rotate(0deg) scale(1.02);
+        }
+
+        .about-image-main img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+
+        .about-image-main:hover img {
+            transform: scale(1.1);
+        }
+
+        .image-badge {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: var(--gradient-sunset);
+            color: var(--white);
+            padding: 10px 20px;
+            border-radius: var(--radius-full);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            box-shadow: 0 8px 24px rgba(255, 179, 71, 0.3);
+        }
+
+        .about-image-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .about-image-grid img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .about-image-grid img:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .about-text {
+            padding: 20px;
+        }
+
+        .about-subtitle {
+            font-size: 1.8rem;
+            color: var(--ocean-blue);
+            margin-bottom: 25px;
+        }
+
+        .about-description {
+            font-size: 1.05rem;
+            color: var(--gray);
+            line-height: 1.8;
+            text-align: justify;
+            margin-bottom: 20px;
+        }
+
+        .about-features {
+            margin: 40px 0;
+            display: grid;
+            gap: 15px;
+        }
+
+        .feature-item {
+            display: flex;
+            gap: 15px;
+            padding: 15px;
+            background: var(--light-gray);
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--ocean-blue);
+            transition: var(--transition);
+        }
+
+        .feature-item:hover {
+            background: var(--cream);
+            transform: translateX(10px);
+            border-left-color: var(--sand-gold);
+        }
+
+        .feature-icon i {
+            font-size: 1.5rem;
+            color: var(--tropical-green);
+        }
+
+        .feature-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .feature-content p {
+            font-size: 0.95rem;
+            color: var(--gray);
+            margin: 0;
+        }
+
+        .about-cta {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        /* ==================== ACTIVITIES SECTION ==================== */
+        .activities {
+            background: var(--light-gray);
+        }
+
+        .activities-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+        }
+
+        .activity-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .activity-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .activity-image {
+            position: relative;
+            height: 250px;
+            overflow: hidden;
+        }
+
+        .activity-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+
+        .activity-card:hover .activity-image img {
+            transform: scale(1.15);
+        }
+
+        .activity-content {
+            padding: 30px;
+        }
+
+        .activity-title {
+            font-size: 1.5rem;
+            margin-bottom: 15px;
+        }
+
+        .activity-description {
+            color: var(--gray);
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .activity-features {
+            margin-bottom: 20px;
+        }
+
+        .activity-features li {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px 0;
+            color: var(--gray);
+        }
+
+        .activity-features i {
+            color: var(--tropical-green);
+        }
+
+        .activity-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            color: var(--ocean-blue);
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .activity-link:hover {
+            color: var(--sand-gold);
+            gap: 15px;
+        }
+
+        /* ==================== PACKAGES SECTION ==================== */
+        .packages {
+            background: var(--cream);
+        }
+
+        .packages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+        }
+
+        .package-card {
+            background: var(--white);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-card:hover {
+            transform: translateY(-10px);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .package-header {
+            background: var(--gradient-ocean);
+            padding: 40px;
+            text-align: center;
+        }
+
+        .package-title {
+            font-size: 1.8rem;
+            color: var(--white);
+            margin-bottom: 15px;
+        }
+
+        .package-price {
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--white);
+        }
+
+        .package-price span {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .package-body {
+            padding: 30px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .package-features {
+            margin-bottom: 30px;
+            flex-grow: 1;
+        }
+
+        .package-features li {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+            padding: 10px 0;
+            border-bottom: 1px solid var(--light-gray);
+            color: var(--gray);
+        }
+
+        .package-features li:last-child {
+            border-bottom: none;
+        }
+
+        .package-features i {
+            color: var(--tropical-green);
+            margin-top: 3px;
+        }
+
+        .package-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--gradient-ocean);
+            color: var(--white);
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            font-size: 1.05rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            transition: var(--transition);
+        }
+
+        .package-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 119, 190, 0.3);
+        }
+
+        /* ==================== GALLERY SECTION ==================== */
+        .gallery {
+            background: var(--white);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .gallery-item {
+            position: relative;
+            height: 350px;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            cursor: pointer;
+            box-shadow: var(--shadow-md);
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.03);
+            box-shadow: var(--shadow-xl);
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.7s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.2);
+        }
+
+        .gallery-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+            opacity: 0;
+            transition: var(--transition);
+        }
+
+        .gallery-item:hover .gallery-overlay {
+            opacity: 1;
+        }
+
+        .gallery-overlay h4 {
+            color: var(--white);
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .gallery-overlay p {
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.9rem;
+            margin: 0;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.95);
+            z-index: 10000;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .lightbox.active {
+            display: flex;
+        }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 90vh;
+            border-radius: var(--radius-lg);
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 50px;
+            height: 50px;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.5rem;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .lightbox-close:hover {
+            background: var(--sand-gold);
+            transform: rotate(90deg);
+        }
+
+        /* ==================== TESTIMONIALS (PERBAIKAN) ==================== */
+.testimonials {
+    background: var(--light-gray);
+}
+
+.testimonial-slider {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; /* TAMBAHKAN INI */
+}
+
+.testimonial-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* PENTING! */
+}
+
+.testimonial-card {
+    min-width: 100%;
+    flex-shrink: 0; /* PENTING! Agar card tidak mengecil */
+    background: var(--white);
+    padding: 60px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-lg);
+    text-align: center;
+}
+
+.testimonial-avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    overflow: hidden;
+    border: 5px solid var(--sand-gold);
+    box-shadow: 0 8px 24px rgba(255, 179, 71, 0.3);
+}
+
+.testimonial-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.testimonial-rating {
+    color: var(--sand-gold);
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.testimonial-text {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--gray);
+    line-height: 1.8;
+    margin-bottom: 25px;
+    padding: 0 40px;
+}
+
+.testimonial-author {
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: var(--ocean-blue);
+    margin-bottom: 5px;
+}
+
+.testimonial-location {
+    color: var(--gray);
+}
+
+.slider-controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.slider-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: var(--gradient-ocean);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    transition: var(--transition);
+    box-shadow: 0 8px 24px rgba(0, 119, 190, 0.3);
+}
+
+.slider-btn:hover {
+    transform: scale(1.1);
+    background: var(--gradient-sunset);
+}
+
+.slider-btn:active {
+    transform: scale(0.95);
+}
+
+/* Indicator dots (TAMBAHAN OPSIONAL) */
+.slider-indicators {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.indicator-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--gray);
+    cursor: pointer;
+    transition: var(--transition);
+    opacity: 0.3;
+}
+
+.indicator-dot.active {
+    background: var(--ocean-blue);
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/* Responsive testimonial */
+@media (max-width: 768px) {
+    .testimonial-card {
+        padding: 40px 20px;
+    }
+    
+    .testimonial-text {
+        font-size: 1.05rem;
+        padding: 0 10px;
+    }
+}
+
+        /* ==================== CONTACT SECTION ==================== */
+        .contact {
+            background: var(--white);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-info h3 {
+            font-size: 2rem;
+            color: var(--ocean-blue);
+            margin-bottom: 25px;
+        }
+
+        .contact-info > p {
+            color: var(--gray);
+            font-size: 1.05rem;
+            margin-bottom: 40px;
+            line-height: 1.8;
+        }
+
+        .contact-details {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            background: var(--light-gray);
+            border-radius: var(--radius-lg);
+            transition: var(--transition);
+            border-left: 4px solid transparent;
+        }
+
+        .contact-item:hover {
+            background: var(--cream);
+            border-left-color: var(--ocean-blue);
+            transform: translateX(10px);
+        }
+
+        .contact-item i {
+            font-size: 2rem;
+            color: var(--ocean-blue);
+            flex-shrink: 0;
+        }
+
+        .contact-item-info h4 {
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+        }
+
+        .contact-item-info p {
+            color: var(--gray);
+            margin: 0;
+        }
+
+        .whatsapp-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            padding: 15px 30px;
+            background: #25D366;
+            color: var(--white);
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            font-size: 1.05rem;
+            margin-top: 20px;
+            transition: var(--transition);
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.3);
+        }
+
+        .whatsapp-btn:hover {
+            background: #128C7E;
+            transform: translateY(-3px);
+            box-shadow: 0 12px 32px rgba(37, 211, 102, 0.4);
+        }
+
+        .contact-form {
+            background: var(--light-gray);
+            padding: 40px;
+            border-radius: var(--radius-xl);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--dark-gray);
+            font-size: 0.95rem;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid transparent;
+            border-radius: var(--radius-md);
+            font-family: 'Poppins', sans-serif;
+            font-size: 1rem;
+            background: var(--white);
+            color: var(--dark-gray);
+            transition: var(--transition);
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--ocean-blue);
+            box-shadow: 0 0 0 4px rgba(0, 119, 190, 0.1);
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 150px;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 15px;
+            background: var(--gradient-ocean);
+            color: var(--white);
+            border: none;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            font-size: 1.1rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 24px rgba(0, 119, 190, 0.3);
+        }
+
+        /* ==================== FOOTER ==================== */
+        .footer {
+            background: linear-gradient(135deg, #1a1a2e 0%, #0f3460 100%);
+            color: var(--white);
+            padding: 60px 0 20px;
+        }
+
+        .footer-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-section h3 {
+            color: var(--sand-gold);
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-section p {
+            color: rgba(255, 255, 255, 0.8);
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .footer-links {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            transition: var(--transition);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .footer-links a:hover {
+            color: var(--sand-gold);
+            padding-left: 10px;
+        }
+
+        .social-links {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            width: 45px;
+            height: 45px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--white);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-links a:hover {
+            background: var(--gradient-sunset);
+            transform: translateY(-5px);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 30px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .footer-bottom a {
+            color: var(--sand-gold);
+        }
+
+        /* ==================== BACK TO TOP ==================== */
+        .back-to-top {
+            position: fixed;
+            bottom: 40px;
+            right: 40px;
+            width: 55px;
+            height: 55px;
+            background: var(--gradient-ocean);
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            cursor: pointer;
+            opacity: 0;
+            visibility: hidden;
+            transition: var(--transition);
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(0, 119, 190, 0.3);
+        }
+
+        .back-to-top.visible {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            transform: translateY(-5px);
+            background: var(--gradient-sunset);
+        }
+
+        /* ==================== FLOATING WHATSAPP ==================== */
+        .floating-whatsapp {
+            position: fixed;
+            bottom: 40px;
+            left: 40px;
+            width: 60px;
+            height: 60px;
+            background: #25D366;
+            color: var(--white);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            cursor: pointer;
+            z-index: 999;
+            box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4);
+            transition: var(--transition);
+            animation: pulse-whatsapp 2s infinite;
+        }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+        }
+
+        @keyframes pulse-whatsapp {
+            0%, 100% { box-shadow: 0 8px 24px rgba(37, 211, 102, 0.4); }
+            50% { box-shadow: 0 8px 40px rgba(37, 211, 102, 0.7); }
+        }
+
+        /* ==================== RESPONSIVE ==================== */
+        @media (max-width: 768px) {
+            .nav-menu {
+                position: fixed;
+                top: 70px;
+                right: -100%;
+                width: 100%;
+                max-width: 320px;
+                height: calc(100vh - 70px);
+                background: var(--white);
+                flex-direction: column;
+                padding: 40px 20px;
+                gap: 0;
+                box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+                transition: right 0.3s ease;
+                overflow-y: auto;
+            }
+
+            .nav-menu.active {
+                right: 0;
+            }
+
+            .nav-menu li {
+                width: 100%;
+                border-bottom: 1px solid var(--light-gray);
+            }
+
+            .nav-link {
+                width: 100%;
+                padding: 15px;
+                justify-content: flex-start;
+            }
+
+            .nav-actions {
+                flex-direction: column;
+                width: 100%;
+                gap: 10px;
+            }
+
+            .btn-book-now {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .menu-toggle {
+                display: flex;
+            }
+
+            .hero-stats {
+                gap: 15px;
+            }
+
+            .stat-item {
+                flex-direction: column;
+                text-align: center;
+                padding: 15px;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
+
+            .about-content,
+            .contact-container {
+                grid-template-columns: 1fr;
+                gap: 40px;
+            }
+
+            .activities-grid,
+            .packages-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .testimonial-card {
+                padding: 40px 20px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+            }
+
+            .back-to-top,
+            .floating-whatsapp {
+                width: 50px;
+                height: 50px;
+                bottom: 20px;
+            }
+
+            .back-to-top { right: 20px; }
+            .floating-whatsapp { left: 20px; font-size: 1.5rem; }
+        }
+
+        @media (max-width: 480px) {
+            .section {
+                padding: 60px 0;
+            }
+
+            .hero-title {
+                font-size: 2rem;
+            }
+
+            .section-title {
+                font-size: 1.8rem;
+            }
+
+            .about-image-main {
+                height: 350px;
+            }
+
+            .contact-form {
+                padding: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- ==================== PRELOADER ==================== -->
+    <div class="preloader" id="preloader">
+        <div class="wave-loader">
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+            <div class="wave"></div>
+        </div>
+        <p class="loading-text">Memuat Surga Tropis...</p>
+    </div>
+    
+    <!-- ==================== PROMO BANNER ==================== -->
+    <div class="promo-banner" id="promoBanner">
+        <div class="promo-content">
+            <i class="fas fa-gift"></i>
+            <span>🎉 <strong>PROMO SPESIAL!</strong> Diskon 30% untuk pemesanan sebelum <span id="promoCountdown"></span></span>
+        </div>
+        <button class="promo-close" id="closeBanner">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <div class="logo-icon">
+                    <i class="fas fa-umbrella-beach"></i>
+                </div>
+                <div class="logo-text">
+                    <span class="logo-main">Pantai Tikus Emas</span>
+                    <span class="logo-sub">Tropical Paradise</span>
+                </div>
+            </a>
+            
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Beranda</a></li>
+                <li><a href="#about" class="nav-link">Tentang</a></li>
+                <li><a href="#activities" class="nav-link">Aktivitas</a></li>
+                <li><a href="#packages" class="nav-link">Paket</a></li>
+                <li><a href="#gallery" class="nav-link">Galeri</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimoni</a></li>
+                <li><a href="#contact" class="nav-link">Kontak</a></li>
+            </ul>
+            
+            <div class="nav-actions">
+                <div class="weather-widget">
+                    <i class="fas fa-sun"></i>
+                    <span class="temp">28°C</span>
+                </div>
+                
+                <button class="theme-toggle" id="themeToggle">
+                    <i class="fas fa-moon"></i>
+                </button>
+                
+                <a href="#packages" class="btn-book-now">
+                    <i class="fas fa-ticket-alt"></i>
+                    <span>Pesan Sekarang</span>
+                </a>
+            </div>
+            
+            <button class="menu-toggle" id="menuToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+        
+        <div class="scroll-progress" id="scrollProgress"></div>
+    </nav>
+    
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero" id="home">
+        <div class="hero-background">
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="https://cdn.pixabay.com/vimeo/399362760/beach-38346.mp4?width=1280" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
+            
+            <div class="beach-elements">
+                <div class="palm-tree palm-left">🌴</div>
+                <div class="palm-tree palm-right">🌴</div>
+                <div class="floating-cloud cloud-1">☁️</div>
+                <div class="floating-cloud cloud-2">☁️</div>
+                <div class="floating-cloud cloud-3">☁️</div>
+            </div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="hero-badge" data-aos="fade-down">
+                <i class="fas fa-certificate"></i>
+                <span>Best Beach Destination 2024</span>
+            </div>
+            
+            <h1 class="hero-title" data-aos="fade-up">
+                Selamat Datang di
+                <span class="gradient-text">Pantai Tikus Emas</span>
+            </h1>
+            
+            <p class="hero-subtitle" data-aos="fade-up" data-aos-delay="100">
+                🏝️ Permata Tropis Pulau Bangka
+            </p>
+            
+            <p class="hero-description" data-aos="fade-up" data-aos-delay="200">
+                "Temukan pesona keemasan di tepi laut biru. Pantai Tikus Emas – keindahan yang tak terlupakan di jantung Pulau Bangka."
+            </p>
+            
+            <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
+                <div class="stat-item">
+                    <i class="fas fa-star"></i>
+                    <div class="stat-info">
+                        <span class="stat-number">4.9</span>
+                        <span class="stat-label">Rating</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-users"></i>
+                    <div class="stat-info">
+                        <span class="stat-number">50K+</span>
+                        <span class="stat-label">Pengunjung</span>
+                    </div>
+                </div>
+                <div class="stat-item">
+                    <i class="fas fa-award"></i>
+                    <div class="stat-info">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-label">Penghargaan</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="400">
+                <a href="#packages" class="btn btn-primary">
+                    <i class="fas fa-ticket-alt"></i>
+                    <span>Pesan Tiket</span>
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-compass"></i>
+                    <span>Jelajahi Sekarang</span>
+                </a>
+            </div>
+            
+            <div class="trust-badges" data-aos="fade-up" data-aos-delay="500">
+                <div class="badge-item">
+                    <i class="fas fa-shield-alt"></i>
+                    <span>Aman & Terpercaya</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-check-circle"></i>
+                    <span>Verified by TripAdvisor</span>
+                </div>
+                <div class="badge-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>ISO Certified</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="600">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <p>Scroll untuk menjelajah</p>
+        </div>
+        
+        <div class="wave-divider">
+            <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" fill="#ffffff"></path>
+            </svg>
+        </div>
+    </section>
+    
+    <!-- ==================== BEACH STATUS ==================== -->
+    <section class="beach-status">
+        <div class="container">
+            <div class="status-grid">
+                <div class="status-item" data-aos="fade-up">
+                    <div class="status-icon">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="status-info">
+                        <span class="status-label">Kondisi Ombak</span>
+                        <span class="status-value safe">Aman & Tenang</span>
+                    </div>
+                </div>
+                
+                <div class="status-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="status-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="status-info">
+                        <span class="status-label">Cuaca Hari Ini</span>
+                        <span class="status-value">Cerah, 28°C</span>
+                    </div>
+                </div>
+                
+                <div class="status-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="status-icon">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="status-info">
+                        <span class="status-label">Jarak Pandang</span>
+                        <span class="status-value">Sangat Baik (10m)</span>
+                    </div>
+                </div>
+                
+                <div class="status-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="status-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <div class="status-info">
+                        <span class="status-label">Keramaian</span>
+                        <span class="status-value moderate">Sedang</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== ABOUT SECTION ==================== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">
+                    <i class="fas fa-wave-square"></i> Kenali Kami
+                </span>
+                <h2 class="section-title">Tentang Pantai Tikus Emas</h2>
+                <p class="section-description">Surga tersembunyi dengan pasir putih dan air laut jernih di Pulau Bangka</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-images" data-aos="fade-right">
+                    <div class="about-image-main">
+                        <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=800" alt="Pantai Tikus Emas">
+                        <div class="image-badge">
+                            <i class="fas fa-camera"></i>
+                            <span>500+ Foto</span>
+                        </div>
+                    </div>
+                    <div class="about-image-grid">
+                        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=400" alt="Beach View 1">
+                        <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=400" alt="Beach View 2">
+                    </div>
+                </div>
+                
+                <div class="about-text" data-aos="fade-left">
+                    <h3 class="about-subtitle">Permata Tersembunyi di Pulau Bangka</h3>
+                    
+                    <p class="about-description">
+                        Pantai Tikus Emas adalah salah satu destinasi wisata unggulan di Pulau Bangka yang menawarkan keindahan alam yang memukau. Terletak di pesisir timur pulau, pantai ini terkenal dengan pasir putihnya yang lembut seperti tepung, air laut biru jernih seperti kristal, dan formasi batu granit alami yang menjadi ciri khas pantai-pantai di Bangka Belitung.
+                    </p>
+                    
+                    <p class="about-description">
+                        Nama "Tikus Emas" berasal dari legenda setempat yang menceritakan tentang seekor tikus berwarna keemasan yang konon menjaga harta karun di kawasan pantai ini. Kini, pantai ini menjadi "harta karun" wisata yang menawarkan pengalaman liburan tak terlupakan.
+                    </p>
+                    
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Pasir Putih Premium</h4>
+                                <p>Pasir putih lembut seperti tepung yang nyaman di kaki</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Air Laut Kristal</h4>
+                                <p>Kejernihan luar biasa, sempurna untuk snorkeling</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Batu Granit Eksotis</h4>
+                                <p>Formasi batuan unik untuk spot foto Instagram</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <div class="feature-icon">
+                                <i class="fas fa-check-circle"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Sunset Spektakuler</h4>
+                                <p>Pemandangan matahari terbenam terbaik di Bangka</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-cta">
+                        <a href="#packages" class="btn btn-primary">
+                            <i class="fas fa-ticket-alt"></i>
+                            <span>Pesan Paket Wisata</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== ACTIVITIES SECTION ==================== -->
+    <section class="section activities" id="activities">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">
+                    <i class="fas fa-swimmer"></i> Petualangan Menanti
+                </span>
+                <h2 class="section-title">Aktivitas Wisata Seru</h2>
+                <p class="section-description">Berbagai kegiatan menarik yang bisa Anda nikmati di Pantai Tikus Emas</p>
+            </div>
+            
+            <div class="activities-grid">
+                <div class="activity-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="activity-image">
+                        <img src="https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600" alt="Snorkeling">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">Snorkeling</h3>
+                        <p class="activity-description">Jelajahi keindahan bawah laut dengan terumbu karang berwarna-warni dan ikan tropis yang beraneka ragam.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-check"></i> Peralatan lengkap</li>
+                            <li><i class="fas fa-check"></i> Pemandu berpengalaman</li>
+                            <li><i class="fas fa-check"></i> Spot terbaik</li>
+                        </ul>
+                        <a href="#packages" class="activity-link">
+                            Lihat Paket <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="activity-image">
+                        <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=600" alt="Island Hopping">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">Island Hopping</h3>
+                        <p class="activity-description">Berkeliling pulau-pulau kecil dengan perahu tradisional sambil menikmati pemandangan laut yang memesona.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-check"></i> Kunjungi 5 pulau</li>
+                            <li><i class="fas fa-check"></i> Makan siang di pulau</li>
+                            <li><i class="fas fa-check"></i> Dokumentasi gratis</li>
+                        </ul>
+                        <a href="#packages" class="activity-link">
+                            Lihat Paket <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="activity-image">
+                        <img src="https://images.unsplash.com/photo-1478131143081-80f7f84ca84d?w=600" alt="Camping">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">Beach Camping</h3>
+                        <p class="activity-description">Bermalam di tepi pantai dengan suara ombak sebagai musik pengantar tidur dan bintang sebagai atap.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-check"></i> Tenda & perlengkapan</li>
+                            <li><i class="fas fa-check"></i> BBQ dinner</li>
+                            <li><i class="fas fa-check"></i> Bonfire party</li>
+                        </ul>
+                        <a href="#packages" class="activity-link">
+                            Lihat Paket <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-aos="zoom-in" data-aos-delay="400">
+                    <div class="activity-image">
+                        <img src="https://images.unsplash.com/photo-1559131397-f94da358f7ca?w=600" alt="Seafood">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">Kuliner Seafood</h3>
+                        <p class="activity-description">Nikmati hidangan seafood segar hasil tangkapan nelayan lokal dengan resep khas Bangka yang autentik.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-check"></i> Seafood segar</li>
+                            <li><i class="fas fa-check"></i> Resep tradisional</li>
+                            <li><i class="fas fa-check"></i> View pantai</li>
+                        </ul>
+                        <a href="#packages" class="activity-link">
+                            Lihat Paket <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-aos="zoom-in" data-aos-delay="500">
+                    <div class="activity-image">
+                        <img src="https://images.unsplash.com/photo-1495954484750-af469f2f9be5?w=600" alt="Sunset">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">Sunset Cruise</h3>
+                        <p class="activity-description">Saksikan matahari terbenam spektakuler dari atas perahu sambil menikmati musik dan minuman segar.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-check"></i> Private boat</li>
+                            <li><i class="fas fa-check"></i> Welcome drinks</li>
+                            <li><i class="fas fa-check"></i> Live music</li>
+                        </ul>
+                        <a href="#packages" class="activity-link">
+                            Lihat Paket <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="activity-card" data-aos="zoom-in" data-aos-delay="600">
+                    <div class="activity-image">
+                        <img src="https://images.unsplash.com/photo-1452421822248-d4c2b47f0c81?w=600" alt="Photography">
+                    </div>
+                    <div class="activity-content">
+                        <h3 class="activity-title">Fotografi Pantai</h3>
+                        <p class="activity-description">Abadikan momen indah di spot-spot instagramable dengan latar batu granit dan laut biru kristal.</p>
+                        <ul class="activity-features">
+                            <li><i class="fas fa-check"></i> Photographer profesional</li>
+                            <li><i class="fas fa-check"></i> Drone photography</li>
+                            <li><i class="fas fa-check"></i> Editing included</li>
+                        </ul>
+                        <a href="#packages" class="activity-link">
+                            Lihat Paket <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== PACKAGES SECTION ==================== -->
+    <section class="section packages" id="packages">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">
+                    <i class="fas fa-box-open"></i> Pilihan Terbaik
+                </span>
+                <h2 class="section-title">Paket Wisata & Tiket</h2>
+                <p class="section-description">Pilih paket wisata yang sesuai dengan kebutuhan liburan Anda</p>
+            </div>
+            
+            <div class="packages-grid">
+                <div class="package-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="package-header">
+                        <h3 class="package-title">Trip Harian</h3>
+                        <div class="package-price">
+                            Rp 150K <span>/ orang</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Tiket masuk pantai</li>
+                            <li><i class="fas fa-check"></i> Welcome drink</li>
+                            <li><i class="fas fa-check"></i> Akses semua fasilitas</li>
+                            <li><i class="fas fa-check"></i> Area parkir gratis</li>
+                            <li><i class="fas fa-check"></i> Foto dengan drone (5 foto)</li>
+                        </ul>
+                        <button class="package-btn">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="package-header">
+                        <h3 class="package-title">Paket Keluarga</h3>
+                        <div class="package-price">
+                            Rp 500K <span>/ 4 orang</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Semua benefit Trip Harian</li>
+                            <li><i class="fas fa-check"></i> Makan siang seafood</li>
+                            <li><i class="fas fa-check"></i> Snorkeling gear</li>
+                            <li><i class="fas fa-check"></i> Tour guide berpengalaman</li>
+                            <li><i class="fas fa-check"></i> Island hopping (3 pulau)</li>
+                            <li><i class="fas fa-check"></i> Dokumentasi lengkap</li>
+                        </ul>
+                        <button class="package-btn">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="package-header">
+                        <h3 class="package-title">Honeymoon</h3>
+                        <div class="package-price">
+                            Rp 1.2Jt <span>/ pasangan</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Private beach access</li>
+                            <li><i class="fas fa-check"></i> Romantic dinner setup</li>
+                            <li><i class="fas fa-check"></i> Penginapan 1 malam</li>
+                            <li><i class="fas fa-check"></i> Couple spa treatment</li>
+                            <li><i class="fas fa-check"></i> Sunset cruise</li>
+                            <li><i class="fas fa-check"></i> Professional photography</li>
+                        </ul>
+                        <button class="package-btn">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="package-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="package-header">
+                        <h3 class="package-title">Backpacker</h3>
+                        <div class="package-price">
+                            Rp 350K <span>/ orang</span>
+                        </div>
+                    </div>
+                    <div class="package-body">
+                        <ul class="package-features">
+                            <li><i class="fas fa-check"></i> Tiket masuk + camping gear</li>
+                            <li><i class="fas fa-check"></i> Camping 1 malam</li>
+                            <li><i class="fas fa-check"></i> BBQ dinner di pantai</li>
+                            <li><i class="fas fa-check"></i> Bonfire night</li>
+                            <li><i class="fas fa-check"></i> Snorkeling equipment</li>
+                            <li><i class="fas fa-check"></i> Sunrise trekking</li>
+                        </ul>
+                        <button class="package-btn">
+                            <i class="fab fa-whatsapp"></i> Pesan Sekarang
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== GALLERY SECTION ==================== -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">
+                    <i class="fas fa-images"></i> Keindahan Visual
+                </span>
+                <h2 class="section-title">Galeri Keindahan Alam</h2>
+                <p class="section-description">Jelajahi pesona visual Pantai Tikus Emas melalui koleksi foto memukau kami</p>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="https://images.unsplash.com/photo-1473496169904-658ba7c44d8a?w=600" alt="Sunrise di Pantai Tikus Emas">
+                    <div class="gallery-overlay">
+                        <h4>Sunrise Memukau</h4>
+                        <p>Keindahan pagi yang menawan</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=600" alt="Batu Granit">
+                    <div class="gallery-overlay">
+                        <h4>Batu Granit Eksotis</h4>
+                        <p>Formasi batuan alami yang unik</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600" alt="Air Laut Jernih">
+                    <div class="gallery-overlay">
+                        <h4>Air Laut Kristal</h4>
+                        <p>Kejernihan luar biasa</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="400">
+                    <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=600" alt="Sunset Golden">
+                    <div class="gallery-overlay">
+                        <h4>Sunset Golden</h4>
+                        <p>Matahari terbenam yang epik</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="500">
+                    <img src="https://images.unsplash.com/photo-1471922694854-ff1b63b20054?w=600" alt="Wisatawan Pantai">
+                    <div class="gallery-overlay">
+                        <h4>Wisatawan Menikmati Pantai</h4>
+                        <p>Pengalaman tak terlupakan</p>
+                    </div>
+                </div>
+                
+                <div class="gallery-item" data-aos="zoom-in" data-aos-delay="600">
+                    <img src="https://images.unsplash.com/photo-1505142468610-359e7d316be0?w=600" alt="Perahu Nelayan">
+                    <div class="gallery-overlay">
+                        <h4>Perahu Tradisional</h4>
+                        <p>Budaya lokal yang autentik</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" id="closeLightbox">&times;</span>
+        <img src="" alt="Gallery Image" id="lightboxImage">
+    </div>
+    
+  <!-- ==================== TESTIMONIALS SECTION ==================== -->
+<section class="section testimonials" id="testimonials">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">
+                <i class="fas fa-comment-dots"></i> Kata Mereka
+            </span>
+            <h2 class="section-title">Testimoni Wisatawan</h2>
+            <p class="section-description">Dengarkan pengalaman para wisatawan yang telah mengunjungi Pantai Tikus Emas</p>
+        </div>
+        
+        <div class="testimonial-slider" data-aos="fade-up">
+            <div class="testimonial-track" id="testimonialTrack">
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah">
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonial-text">
+                        "Pantai Tikus Emas benar-benar surga tersembunyi! Pasirnya putih dan lembut, airnya jernih, dan batu granitnya sangat eksotis. Perfect untuk liburan keluarga!"
+                    </p>
+                    <h4 class="testimonial-author">Sarah Wijaya</h4>
+                    <p class="testimonial-location">Jakarta</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Budi">
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonial-text">
+                        "Sunset di Pantai Tikus Emas adalah yang terindah yang pernah saya lihat. Cocok banget buat honeymoon. Pelayanannya juga sangat ramah dan profesional!"
+                    </p>
+                    <h4 class="testimonial-author">Budi Santoso</h4>
+                    <p class="testimonial-location">Bandung</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Maya">
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonial-text">
+                        "Sebagai fotografer, Pantai Tikus Emas adalah spot impian! Setiap sudutnya instagramable. Air lautnya biru jernih dan formasi batunya unik. Highly recommended!"
+                    </p>
+                    <h4 class="testimonial-author">Maya Putri</h4>
+                    <p class="testimonial-location">Surabaya</p>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-avatar">
+                        <img src="https://randomuser.me/api/portraits/men/54.jpg" alt="Andi">
+                    </div>
+                    <div class="testimonial-rating">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+                    <p class="testimonial-text">
+                        "Liburan keluarga terbaik! Anak-anak senang banget main di pantai yang bersih dan aman. Fasilitasnya lengkap dan pelayanannya ramah. Pasti balik lagi!"
+                    </p>
+                    <h4 class="testimonial-author">Andi Pratama</h4>
+                    <p class="testimonial-location">Medan</p>
+                </div>
+            </div>
+            
+            <div class="slider-controls">
+                <button class="slider-btn" id="prevBtn" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="slider-btn" id="nextBtn" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+            
+            <!-- Indicator Dots (OPSIONAL) -->
+            <div class="slider-indicators">
+                <span class="indicator-dot active"></span>
+                <span class="indicator-dot"></span>
+                <span class="indicator-dot"></span>
+                <span class="indicator-dot"></span>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <!-- ==================== CONTACT SECTION ==================== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">
+                    <i class="fas fa-envelope"></i> Hubungi Kami
+                </span>
+                <h2 class="section-title">Kontak & Pemesanan</h2>
+                <p class="section-description">Hubungi kami untuk informasi lebih lanjut atau pemesanan paket wisata</p>
+            </div>
+            
+            <div class="contact-container">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Hubungi Kami</h3>
+                    <p>Tim kami siap membantu Anda merencanakan liburan impian di Pantai Tikus Emas.</p>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <div class="contact-item-info">
+                                <h4>Alamat</h4>
+                                <p>Jl. Pantai Tikus Emas No. 88<br>Kelurahan Pasir Padi, Kec. Pangkalan Baru<br>Bangka Tengah, Kepulauan Bangka Belitung 33684</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <div class="contact-item-info">
+                                <h4>Telepon</h4>
+                                <p>+62 812-3456-7890<br>+62 717-123-456</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <div class="contact-item-info">
+                                <h4>Email</h4>
+                                <p>info@pantaitikusemas.com<br>booking@pantaitikusemas.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <i class="fas fa-clock"></i>
+                            <div class="contact-item-info">
+                                <h4>Jam Operasional</h4>
+                                <p>Senin - Jumat: 08:00 - 17:00 WIB<br>Weekend: 06:00 - 19:00 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="https://wa.me/6281234567890?text=Halo,%20saya%20ingin%20bertanya%20tentang%20Pantai%20Tikus%20Emas" class="whatsapp-btn" target="_blank">
+                        <i class="fab fa-whatsapp"></i> Hubungi via WhatsApp
+                    </a>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Nama Lengkap *</label>
+                            <input type="text" id="name" name="name" required placeholder="Masukkan nama Anda">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required placeholder="nama@email.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Nomor WhatsApp *</label>
+                            <input type="tel" id="phone" name="phone" required placeholder="08xxxxxxxxxx">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="date">Tanggal Kunjungan</label>
+                            <input type="date" id="date" name="date">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Pesan</label>
+                            <textarea id="message" name="message" placeholder="Tulis pertanyaan atau kebutuhan Anda..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i> Kirim Pesan
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Kami</h3>
+                    <p>Pantai Tikus Emas adalah destinasi wisata unggulan di Pulau Bangka yang menawarkan keindahan alam tropis, pasir putih, dan pengalaman liburan tak terlupakan.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+                        <li><a href="#about"><i class="fas fa-chevron-right"></i> Tentang</a></li>
+                        <li><a href="#activities"><i class="fas fa-chevron-right"></i> Aktivitas</a></li>
+                        <li><a href="#packages"><i class="fas fa-chevron-right"></i> Paket Wisata</a></li>
+                        <li><a href="#gallery"><i class="fas fa-chevron-right"></i> Galeri</a></li>
+                        <li><a href="#contact"><i class="fas fa-chevron-right"></i> Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Layanan</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Pemesanan Online</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Paket Group</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Tour Guide</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Dokumentasi</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Transport</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Penginapan</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h3>Kontak Info</h3>
+                    <p>📍 Jl. Pantai Tikus Emas No. 88<br>Bangka Tengah, Kep. Bangka Belitung</p>
+                    <p>📞 +62 812-3456-7890</p>
+                    <p>✉️ info@pantaitikusemas.com</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pantai Tikus Emas - Pulau Bangka. All Rights Reserved.</p>
+                <p style="margin-top: 10px; font-size: 0.9rem;">Designed with ❤️ for Paradise Seekers</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- ==================== BACK TO TOP BUTTON ==================== -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+    
+    <!-- ==================== FLOATING WHATSAPP ==================== -->
+    <a href="https://wa.me/6281234567890?text=Halo!%20Saya%20ingin%20bertanya%20tentang%20Pantai%20Tikus%20Emas" class="floating-whatsapp" target="_blank" aria-label="Chat WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    
+    <!-- AOS Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <script>
+        // ==================== INITIALIZATION ====================
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+        
+        // ==================== GLOBAL VARIABLES ====================
+        const navbar = document.getElementById('navbar');
+        const menuToggle = document.getElementById('menuToggle');
+        const navMenu = document.getElementById('navMenu');
+        const navLinks = document.querySelectorAll('.nav-link');
+        const themeToggle = document.getElementById('themeToggle');
+        const scrollProgress = document.getElementById('scrollProgress');
+        const backToTop = document.getElementById('backToTop');
+        const preloader = document.getElementById('preloader');
+        const promoBanner = document.getElementById('promoBanner');
+        const closeBanner = document.getElementById('closeBanner');
+        
+        // ==================== PRELOADER ====================
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                preloader.classList.add('hidden');
+            }, 1500);
+        });
+        
+        // ==================== NAVBAR SCROLL ====================
+        let lastScroll = 0;
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 100) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+            
+            lastScroll = currentScroll;
+            
+            // Update progress bar
+            const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
+            const scrolled = (window.pageYOffset / scrollHeight) * 100;
+            scrollProgress.style.width = scrolled + '%';
+            
+            // Show/Hide back to top
+            if (currentScroll > 300) {
+                backToTop.classList.add('visible');
+            } else {
+                backToTop.classList.remove('visible');
+            }
+        });
+        
+        // ==================== MOBILE MENU ====================
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+        
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                menuToggle.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+        
+        // ==================== ACTIVE NAVIGATION ====================
+        window.addEventListener('scroll', () => {
+            let current = '';
+            const sections = document.querySelectorAll('section[id]');
+            
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 200) {
+                    current = section.getAttribute('id');
+                }
+            });
+            
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').substring(1) === current) {
+                    link.classList.add('active');
+                }
+            });
+        });
+        
+        // ==================== SMOOTH SCROLL ====================
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    const navHeight = navbar.offsetHeight;
+                    const targetPosition = target.offsetTop - navHeight;
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // ==================== DARK MODE ====================
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', currentTheme);
+        
+        if (currentTheme === 'dark') {
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+        }
+        
+        themeToggle.addEventListener('click', () => {
+            const theme = document.documentElement.getAttribute('data-theme');
+            const newTheme = theme === 'dark' ? 'light' : 'dark';
+            
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            
+            themeToggle.innerHTML = newTheme === 'dark' 
+                ? '<i class="fas fa-sun"></i>' 
+                : '<i class="fas fa-moon"></i>';
+        });
+        
+        // ==================== BACK TO TOP ====================
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // ==================== PROMO BANNER ====================
+        const bannerClosed = sessionStorage.getItem('promoBannerClosed');
+        if (bannerClosed) {
+            promoBanner.classList.add('hidden');
+        }
+        
+        closeBanner.addEventListener('click', () => {
+            promoBanner.classList.add('hidden');
+            sessionStorage.setItem('promoBannerClosed', 'true');
+        });
+        
+        // ==================== COUNTDOWN ====================
+        const promoCountdown = document.getElementById('promoCountdown');
+        const countDownDate = new Date();
+        countDownDate.setDate(countDownDate.getDate() + 30);
+        
+        function updateCountdown() {
+            const now = new Date().getTime();
+            const distance = countDownDate - now;
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            
+            if (distance > 0) {
+                promoCountdown.innerHTML = `${days}h ${hours}j`;
+            }
+        }
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+        
+       // ==================== TESTIMONIAL SLIDER (PERBAIKAN) ====================
+const track = document.getElementById('testimonialTrack');
+const prevBtn = document.getElementById('prevBtn');
+const nextBtn = document.getElementById('nextBtn');
+
+if (track && prevBtn && nextBtn) {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.testimonial-card');
+    const totalSlides = slides.length;
+    let autoSlideInterval;
+    
+    // Update slider position
+    function updateSlider() {
+        const offset = -currentSlide * 100;
+        track.style.transform = `translateX(${offset}%)`;
+        updateIndicators();
+    }
+    
+    // Indicator dots click event
+    const indicatorDots = document.querySelectorAll('.indicator-dot');
+    indicatorDots.forEach((dot, index) => {
+        dot.addEventListener('click', () => {
+            currentSlide = index;
+            updateSlider();
+            resetAutoSlide();
+        });
+    });
+    
+    // Next slide
+    function nextSlide() {
+        currentSlide = (currentSlide + 1) % totalSlides;
+        updateSlider();
+    }
+    
+    // Previous slide
+    function prevSlide() {
+        currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+        updateSlider();
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', () => {
+        nextSlide();
+        resetAutoSlide();
+    });
+    
+    prevBtn.addEventListener('click', () => {
+        prevSlide();
+        resetAutoSlide();
+    });
+    
+    // Auto slide
+    function startAutoSlide() {
+        autoSlideInterval = setInterval(nextSlide, 5000); // 5 detik
+    }
+    
+    function stopAutoSlide() {
+        clearInterval(autoSlideInterval);
+    }
+    
+    function resetAutoSlide() {
+        stopAutoSlide();
+        startAutoSlide();
+    }
+    
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowLeft') {
+            prevSlide();
+            resetAutoSlide();
+        } else if (e.key === 'ArrowRight') {
+            nextSlide();
+            resetAutoSlide();
+        }
+    });
+    
+    // Touch/Swipe support
+    let touchStartX = 0;
+    let touchEndX = 0;
+    
+    track.addEventListener('touchstart', (e) => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+    
+    track.addEventListener('touchend', (e) => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe();
+    });
+    
+    function handleSwipe() {
+        if (touchStartX > touchEndX + 50) {
+            nextSlide();
+            resetAutoSlide();
+        } else if (touchStartX < touchEndX - 50) {
+            prevSlide();
+            resetAutoSlide();
+        }
+    }
+    
+    // Pause on hover
+    track.addEventListener('mouseenter', stopAutoSlide);
+    track.addEventListener('mouseleave', startAutoSlide);
+    
+    // Update indicators (opsional - jika mau tambah dots)
+    function updateIndicators() {
+        const dots = document.querySelectorAll('.indicator-dot');
+        if (dots.length > 0) {
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('active', index === currentSlide);
+            });
+        }
+    }
+    
+    // Initialize
+    updateSlider();
+    startAutoSlide();
+    
+    console.log(`✅ Testimonial slider initialized with ${totalSlides} slides`);
+}
+        
+        // ==================== GALLERY LIGHTBOX ====================
+        const lightbox = document.getElementById('lightbox');
+        const lightboxImage = document.getElementById('lightboxImage');
+        const closeLightbox = document.getElementById('closeLightbox');
+        const galleryItems = document.querySelectorAll('.gallery-item');
+        
+        galleryItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                lightboxImage.src = img.src;
+                lightbox.classList.add('active');
+            });
+        });
+        
+        closeLightbox.addEventListener('click', () => {
+            lightbox.classList.remove('active');
+        });
+        
+        lightbox.addEventListener('click', (e) => {
+            if (e.target === lightbox) {
+                lightbox.classList.remove('active');
+            }
+        });
+        
+        // ==================== PACKAGE BOOKING ====================
+        document.querySelectorAll('.package-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                const card = this.closest('.package-card');
+                const packageName = card.querySelector('.package-title').textContent;
+                const packagePrice = card.querySelector('.package-price').textContent;
+                
+                const message = `Halo! Saya tertarik dengan paket *${packageName}* (${packagePrice}). Mohon informasi lebih lanjut. Terima kasih! 🏖️`;
+                const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(message)}`;
+                window.open(whatsappUrl, '_blank');
+            });
+        });
+        
+        // ==================== CONTACT FORM ====================
+        const contactForm = document.getElementById('contactForm');
+        
+        contactForm.addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const name = formData.get('name');
+            const email = formData.get('email');
+            const phone = formData.get('phone');
+            const date = formData.get('date');
+            const message = formData.get('message');
+            
+            const whatsappMessage = `
+*PESAN DARI WEBSITE*
+
+*Nama:* ${name}
+*Email:* ${email}
+*WhatsApp:* ${phone}
+*Tanggal Kunjungan:* ${date || 'Belum ditentukan'}
+
+*Pesan:*
+${message || 'Tidak ada pesan tambahan'}
+            `.trim();
+            
+            const whatsappUrl = `https://wa.me/6281234567890?text=${encodeURIComponent(whatsappMessage)}`;
+            
+            alert('Terima kasih! Anda akan diarahkan ke WhatsApp...');
+            this.reset();
+            setTimeout(() => {
+                window.open(whatsappUrl, '_blank');
+            }, 1000);
+        });
+        
+        // ==================== CONSOLE MESSAGE ====================
+        console.log('%c🏝️ Pantai Tikus Emas', 'font-size: 24px; font-weight: bold; color: #0077BE;');
+        console.log('%cWelcome to our website!', 'font-size: 14px; color: #FFD700;');
+    </script>
+</body>
+</html>
